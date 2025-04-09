@@ -123,6 +123,7 @@ h2 {
     font-weight: bold;
     color: red !important;
     /* Warm orange */
+     font-family: 'Montserrat', sans-serif !important;
 }
 
 footer {
