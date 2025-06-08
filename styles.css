@@ -135,3 +135,44 @@ footer {
     font-size: 1.2rem;
     margin-top: 20px;
 }
+.sticky-note {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #fff8b0, #ffe680);
+  padding: 10px 14px;
+  border: 1px solid #e0d85a;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+.sticky-note:hover {
+  transform: translateY(-2px);
+}
+.sticky-note .icon {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 600px) {
+  .sticky-note {
+    bottom: 12px;
+    right: 12px;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  .sticky-note .icon {
+    margin-right: 4px;
+    font-size: 0.9rem;
+  }
+}
